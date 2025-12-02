@@ -164,23 +164,20 @@ main {
     justify-content: space-between;
     align-items: center;
 }
-.ul{
+ul{
     list-style: none;
-    display: flex;
-    flex-direction: row;
 }
 .mainmenu__list{
     display: flex;
     flex-direction: row;
-    gap: 35px;
-    padding: 60px;
     font-size: 14px;
+    gap: 19px;
 }
 .basket__list{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 30px;
+    gap: 19px;
     padding-left: 100px;
     padding: 55px;
 }
@@ -191,4 +188,28 @@ main {
     padding: 50px;
     padding-left: 90px;
     padding-right: 90px;
+}
+/*---------------position--------------*/
+/*.card:nth-child(2) {
+    position: fixed;
+    top: 200px;
+    left: 300px;
+    z-index: 100;
+}
+.new{
+    position: relative;
+
+}*/
+.card {
+    position: relative;
+}
+.card .bi-heart-fill{
+    fill:rgb(146, 121, 192);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.slider__item{
+    min-height: 564px;
+    background: url(../img/first-screen__image.png) no-repeat right center;
 }
