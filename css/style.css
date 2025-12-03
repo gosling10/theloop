@@ -26,64 +26,77 @@ main {
     padding-left: 15px;
     padding-right: 15px;
 }
+
 /*--------delivery--------*/
-.delivery{
+.delivery {
     background: #212121;
     color: white;
 }
-.delivery .container{
+
+.delivery .container {
     text-align: center;
     padding-top: 80px;
     padding-bottom: 70px;
 }
-.delivery__tittle{
+
+.delivery__tittle {
     font-size: 30px;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin: 23px;
 }
-.delivery__tittle span{
+
+.delivery__tittle span {
     font-weight: normal;
 }
-.delivery__text{
+
+.delivery__text {
     font-size: 21px;
     font-family: 'montserratlight';
 }
+
 /*------section man woman---------*/
-.man-woman .container{
+.man-woman .container {
     display: flex;
     flex-direction: row;
 }
+
 .man,
-.woman{
+.woman {
     width: 50%;
     padding-top: 60px;
     padding-bottom: 58px;
 
 }
-.man{
+
+.man {
     background: url(../img/man.png) no-repeat;
     background-position-x: right;
     background-position-y: bottom;
 }
-.woman{
+
+.woman {
     background: url(../img/woman.png) no-repeat;
     background-position-x: right;
     background-position-y: bottom;
-    padding-left: 35px; 
+    padding-left: 35px;
 }
-.man-woman{
+
+.man-woman {
     background: linear-gradient(90deg, #F9F6F1 0%, #F9F6F1 50%, #F9E0E0 50%, #F9E0E0 100%);
 }
-.man-woman__tittle{
+
+.man-woman__tittle {
     text-transform: uppercase;
     font-size: 24px;
     margin-bottom: 24px;
 }
-.man-woman__tittle span{
+
+.man-woman__tittle span {
     font-weight: normal;
 }
-.man-woman__link{
+
+.man-woman__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,23 +105,27 @@ main {
     height: 30px;
     margin-top: 40px;
 }
+
 .man-woman__link:hover,
-.man-woman__link:focus{
+.man-woman__link:focus {
     background-color: #b39580;
 }
+
 /*----------sactions new and sale----------*/
-.new .container{
+.new .container {
     text-align: center;
     padding-top: 150px;
     padding-bottom: 150px;
 }
-.title{
+
+.title {
     font-size: 36px;
     text-transform: uppercase;
     font-weight: 1000;
     text-align: center;
 }
-.btn{
+
+.btn {
     background-color: #D7B399;
     width: 220px;
     height: 55px;
@@ -117,16 +134,19 @@ main {
     border: none;
     text-align: center;
 }
+
 .btn:hover,
-.btn:focus{
+.btn:focus {
     background-color: #b99a84;
 }
-.card{
+
+.card {
     border: #D7B399 solid 1px;
     padding: 22px 25px 25px;
     text-align: center;
 }
-.card__title{
+
+.card__title {
     font-size: 14px;
     font-weight: 700;
     margin-top: 25px;
@@ -134,12 +154,14 @@ main {
     margin-left: 70px;
     margin-right: 70px;
 }
-.card__price{
+
+.card__price {
     font-size: 18px;
     font-weight: 800;
     color: #D7B399;
 }
-.catalog{
+
+.catalog {
     display: flex;
     flex-direction: row;
     gap: 30px;
@@ -147,33 +169,44 @@ main {
     margin-bottom: 100px;
     justify-content: center;
 }
-.header{
+
+.header {
     min-height: 800px;
     background-color: #F9F6F1;
     align-content: space-between;
 }
-.section__header-menu{
+
+.section__header-menu {
     min-height: 90px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    background-color: #F9F6F1;
 }
-.section__wrapper{
+
+.section__wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
-ul{
+
+ul {
     list-style: none;
 }
-.mainmenu__list{
+
+.mainmenu__list {
     display: flex;
     flex-direction: row;
     font-size: 14px;
     gap: 19px;
 }
-.basket__list{
+
+.basket__list {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -181,7 +214,8 @@ ul{
     padding-left: 100px;
     padding: 55px;
 }
-.logo{
+
+.logo {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -189,6 +223,7 @@ ul{
     padding-left: 90px;
     padding-right: 90px;
 }
+
 /*---------------position--------------*/
 /*.card:nth-child(2) {
     position: fixed;
@@ -203,13 +238,83 @@ ul{
 .card {
     position: relative;
 }
-.card .bi-heart-fill{
-    fill:rgb(146, 121, 192);
+
+.card .bi-heart-fill {
+    fill: rgb(146, 121, 192);
     position: absolute;
     top: 10px;
     right: 10px;
 }
-.slider__item{
+
+.slider__item {
+    display: flex;
+    padding-top: 166px;
+    justify-content: space-between;
     min-height: 564px;
-    background: url(../img/first-screen__image.png) no-repeat right center;
+    background: url(../img/running_shoes_PNG5823.png) no-repeat right center;
+}
+
+.slider__text {
+    font-size: 30px;
+    padding-bottom: 36px;
+}
+
+.slider__big-text {
+    font-family: "montserratbold", "Arial", sans-serif;
+    font-weight: bold;
+    font-size: 55px;
+    text-transform: uppercase;
+    padding-bottom: 54px;
+}
+
+.button {
+    display: block;
+    width: 240px;
+    padding: 22px 0;
+    text-align: center;
+    background-color: #D7B399;
+    text-transform: uppercase;
+    font-size: 16px;
+    color: white;
+}
+
+.slider__item-price {
+    font-family: "montserratbold", "Arial", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.slider__price-old {
+    font-size: 24px;
+    text-decoration-line: line-through;
+}
+
+.slider__price-new {
+    font-size: 42px;
+    color: #d84033;
+}
+
+.slider__wrapper {
+    position: relative;
+}
+
+.slider__button {
+    position: absolute;
+    top: 50%;
+}
+
+.slider__button-prev {
+    left: -100px;
+    height: 10%;
+    width: 10%;
+}
+
+.slider__button-next {
+    right: -100px;
+    height: 10%;
+    width: 10%;
+}
+.knopka{
+    height: 60%;
+    width: 30%;
 }
