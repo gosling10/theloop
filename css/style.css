@@ -212,7 +212,6 @@ ul {
     align-items: center;
     gap: 19px;
     padding-left: 100px;
-    padding: 55px;
 }
 
 .logo {
@@ -252,6 +251,7 @@ ul {
     justify-content: space-between;
     min-height: 564px;
     background: url(../img/running_shoes_PNG5823.png) no-repeat right center;
+    margin-top: 138px;
 }
 
 .slider__text {
@@ -304,17 +304,101 @@ ul {
 }
 
 .slider__button-prev {
-    left: -100px;
+    left: -30px;
     height: 10%;
     width: 10%;
+    border: none;
+    background: none;
 }
 
 .slider__button-next {
-    right: -100px;
+    right: -30px;
     height: 10%;
     width: 10%;
+    border: none;
+    background: none;
 }
-.knopka{
+
+.slider__button-prev:hover {
+    opacity: 70%;
+}
+
+.slider__button-next:hover {
+    opacity: 70%;
+}
+
+.knopka {
     height: 60%;
     width: 30%;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 70%;
+}
+
+.dress__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.dress__item-grey {
+    width: 250px;
+    height: 236px;
+    text-align: left;
+    background-color: #f4f4f4;
+    position: relative
+}
+
+.dress__item-cream {
+    width: 250px;
+    height: 236px;
+    text-align: left;
+    background-color: #f9f6f1;
+    position: relative
+}
+
+.dress__tittle{
+    position: absolute;
+    bottom: 24px;
+    left: 30px;
+}
+.subscribe {
+    background: #212121;
+    color: rgb(255, 255, 255);
+}
+
+.subscribe__tittle {
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 23px;
+}
+
+.subscribe .container {
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 70px;
+}
+
+.pole {
+    height: 40px;
+    width: 230px;
+}
+
+.podp {
+    border: none;
+    height: 40px;
+    width: 185px;
+    background-color: #D7B399;
+    color: white;
+}
+
+.podp:hover {
+    opacity: 70%;
 }
