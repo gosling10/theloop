@@ -220,6 +220,10 @@ ul {
     padding-left: 90px;
     padding-right: 90px;
 }
+.mainmenu__item{
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
 
 /*---------------position--------------*/
 /*.card:nth-child(2) {
@@ -401,9 +405,14 @@ a:hover {
 .podp:hover {
     opacity: 70%;
 }
+.navbar-toggler{
+    display: none;
+    background: none;
+    border: none;
+}
 
 /*-------------медиа-запросы-------------*/
-@media(max-width:1326) {
+@media(max-width:1326px) {
     .slider__button-prev {
         left: 0;
     }
@@ -434,6 +443,9 @@ a:hover {
     .container {
         width: auto;
         padding: 0 30px;
+    }
+    .dress__item{
+        width: 25%;
     }
 }
 @media(max-width:992px){
@@ -478,14 +490,21 @@ a:hover {
         order: -1;
         text-align: right;
     }
+    .dress__item{
+        width: 33%;
+    }
 }
 @media(max-width:600px){
     .basket,
     .menu{
         display: none;
+        width: 100%;
     }
     .navbar-toggler{
         display: block;
+    }
+    .mainmenu__list{
+        flex-direction: column;
     }
 }
 
@@ -493,4 +512,15 @@ a:hover {
     .card {
         width: 70%;
     }
+    .dress__item{
+        width: 50%;
+    }
+}
+@media(max-width:300px){
+    .dress__item{
+        width: 100%;
+    }
+}
+.show{
+    display: block;
 }
