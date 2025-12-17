@@ -189,7 +189,6 @@ main {
 .section__wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
 }
 
@@ -225,17 +224,6 @@ ul {
     padding-top: 15px;
 }
 
-/*---------------position--------------*/
-/*.card:nth-child(2) {
-    position: fixed;
-    top: 200px;
-    left: 300px;
-    z-index: 100;
-}
-.new{
-    position: relative;
-
-}*/
 .card {
     position: relative;
 }
@@ -306,17 +294,17 @@ ul {
 }
 
 .slider__button-prev {
-    left: -30px;
+    left: 1px;
     height: 10%;
-    width: 10%;
+    width: 6%;
     border: none;
     background: none;
 }
 
 .slider__button-next {
-    right: -30px;
+    right: 1px;
     height: 10%;
-    width: 10%;
+    width: 6%;
     border: none;
     background: none;
 }
@@ -414,11 +402,11 @@ a:hover {
 /*-------------медиа-запросы-------------*/
 @media(max-width:1326px) {
     .slider__button-prev {
-        left: 0;
+        display: none;
     }
 
     .slider__button-next {
-        left: 0;
+        display: none;
     }
 }
 
@@ -493,7 +481,14 @@ a:hover {
     .dress__item{
         width: 33%;
     }
+    
 }
+@media(max-width:725px){
+    .basket{
+        display: none;
+    }
+}
+
 @media(max-width:600px){
     .basket,
     .menu{
@@ -505,6 +500,9 @@ a:hover {
     }
     .mainmenu__list{
         flex-direction: column;
+    }
+    .section__wrapper {
+        justify-content: space-between;
     }
 }
 
