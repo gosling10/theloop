@@ -338,7 +338,7 @@ a:hover {
 }
 
 .dress__item-grey {
-    width: 250px;
+    width: 25%;
     height: 236px;
     text-align: left;
     background-color: #f4f4f4;
@@ -346,11 +346,14 @@ a:hover {
 }
 
 .dress__item-cream {
-    width: 250px;
+    width: 25%;
     height: 236px;
     text-align: left;
     background-color: #f9f6f1;
     position: relative
+}
+.dress img{
+    height: 100%;
 }
 
 .dress__tittle {
